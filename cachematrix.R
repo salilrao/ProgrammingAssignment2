@@ -5,10 +5,10 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-  m<-NULL
-  set<-function(y){
-    x<<-y
-    m<<-NULL
+  m<-NULL # default value to null if CacheSolve not used
+  set<-function(y){ #set matrix value
+    x<<-y # Cache matrix value. Later CacheSolve can use this tocheck whether value has changed
+    m<<-NULL 
 }
 
 
